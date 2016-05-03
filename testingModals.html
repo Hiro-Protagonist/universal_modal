@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+/* YouTube */
+
+div.YouTube {
+	position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+
+div.YouTube iframe {
+position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#player {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#hiroYouTube {
+	background: #000;
+	width: 100%;
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 25px;
+	height: 0;
+}
+
+/*modal*/
+
+#hiroBlocker{
+	background: rgba(3,3,3,0.3);
+	display: none;
+	position: fixed;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+}
+
+.hiroModal > img {
+	display: block;
+	width: 100%;
+}
+
+.hiroModal{
+	display: none;
+	position: fixed;
+	background: white;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	opacity:1;
+	width: 70%;
+}
+
+/*iframe*/
+#hiroModalFrame > iframe {
+	width: 100%;
+	display: block;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="newHiroScripts.js"></script>
+<script src="hiroVideoBuilder.js"></script>
+</head>
+<body>
+
+<!-- modal stuff -->
+	
+	<div id="hiroBlocker"></div>
+	<div class="hiroModal" id="hiroModalFrame"></div>
+	<!-- youtube modal -->
+	<div id="hiroYouTubeModal" class="hiroModal">
+    <div id="hiroYouTube">
+      <div id="player"></div>
+    </div>
+  </div>
+  <!-- /modal stuff -->
+<img src="http://qa.hollandamerica.com/images/miscellaneous/670x300_placeholder.png" class="hiroModalLink">
+
+
+<a class="hiroModalLink" data-videoid="SoflJKRoTjM" data-trackingref="TestLP_module2_text_USD">VIDEO</a>
+
+
+<!-- <a class="youTubehiroModalLink" data-videoid="ftzRyg244rs" data-trackingref="TestLP_module3_text_USD">TEST3</a> -->
+<a href="http://www.hollandamerica.com/pageByName/Resp.action?requestPage=12PerfectDays&WT.ac=footer_promo_12%20Perfect_Days_US" class="hiroModalLink" id="testExternalLink">TEST TERMS</a>
+<a href="#loremDiv" class="hiroModalLink">Lorem Div Test</a>
+
+<div id="loremDiv" class="hiroModal">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+
+<script type="text/javascript">
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
+
